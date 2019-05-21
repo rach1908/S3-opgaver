@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opg3002", "opg3002\opg3002.csproj", "{ADDF76B3-D423-4212-A8E2-218FFE694416}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opg3002_ShoppingCL", "opg3002_ShoppingCL\opg3002_ShoppingCL.csproj", "{83728731-79B7-4D43-8A4F-3F3765A4911A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "opg3002_ShoppingCL", "opg3002_ShoppingCL\opg3002_ShoppingCL.csproj", "{83728731-79B7-4D43-8A4F-3F3765A4911A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opg3002_UnitTests", "opg3002_UnitTests\opg3002_UnitTests.csproj", "{E5098890-B4FE-4B43-979A-B865863B85D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{83728731-79B7-4D43-8A4F-3F3765A4911A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83728731-79B7-4D43-8A4F-3F3765A4911A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83728731-79B7-4D43-8A4F-3F3765A4911A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5098890-B4FE-4B43-979A-B865863B85D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5098890-B4FE-4B43-979A-B865863B85D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5098890-B4FE-4B43-979A-B865863B85D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5098890-B4FE-4B43-979A-B865863B85D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

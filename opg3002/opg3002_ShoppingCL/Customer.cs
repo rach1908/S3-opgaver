@@ -63,10 +63,15 @@ namespace opg3002_ShoppingCL
 
         public int GetTimeSinceFirstRegistration()
         {
+            //(int) required here, but not in the next method. The Difference is TotalDays vs Days. 
             return (int) (DateTime.Now - FirstRegistered).TotalDays;
         }
         public int GetTimeToEligibility()
         {
+            if (becamePremium == null)
+            {
+                return 30 - (DateTime.Now - FirstRegistered).Days;
+            }
             return 0;
         }
 
