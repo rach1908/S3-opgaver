@@ -16,7 +16,8 @@ namespace opg3002_ShoppingCL
         {
             this.lastname = lastname;
             this.firstname = firstname;
-            this.firstRegistered = DateTime.Now;
+            FirstRegistered = DateTime.Now;
+            
         }
         public int Id
         {
@@ -68,7 +69,7 @@ namespace opg3002_ShoppingCL
         }
         public int GetTimeToEligibility()
         {
-            if (becamePremium == null)
+            if (becamePremium == DateTime.MinValue)
             {
                 return 30 - (DateTime.Now - FirstRegistered).Days;
             }
