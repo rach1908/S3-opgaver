@@ -63,19 +63,20 @@ namespace opg3002_ShoppingCL
             {
                 discountApplier += GeneralDiscountPct;
 
-                if (customer.BecamePremium != null)
+                if (customer.BecamePremium != DateTime.MinValue)
                 {
                     discountApplier += 0.05;
-                }
-                else if (customer.BecameGold != null)
-                {
-                    discountApplier += 0.075;
+                    if (customer.BecameGold != DateTime.MinValue)
+                    {
+                        discountApplier += 0.075;
+
+                        if (customer.BecameDiamond != DateTime.MinValue)
+                        {
+                            discountApplier += 0.127;
+                        }
+                    }
                 }
                 
-                if (customer.BecameDiamond != null)
-                {
-                    discountApplier += 0.127;
-                }
             }
             return normalPrice - normalPrice * discountApplier;
         }
