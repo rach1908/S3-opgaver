@@ -1,0 +1,20 @@
+﻿<Window x:Class="ImgDB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImgDB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="436.4">
+  <Grid>
+    <Button x:Name="btnUpload" Content="Upload Image" HorizontalAlignment="Left" Margin="60,368,0,0" VerticalAlignment="Top" Width="100"/>
+    <Button x:Name="btnDownload" Content="Download Image" HorizontalAlignment="Left" Margin="281,368,0,0" VerticalAlignment="Top" Width="100"/>
+    <ListBox x:Name="lbxImages" HorizontalAlignment="Left" Height="220" Margin="281,83,0,0" VerticalAlignment="Top" Width="100"/>
+    <Label Content="Images:" HorizontalAlignment="Left" Margin="281,30,0,0" VerticalAlignment="Top" Width="100"/>
+    <Label Content="Preview:" HorizontalAlignment="Left" Margin="25,38,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.06,0.562"/>
+    <Grid DataContext="{Binding Path=SelectedItem, ElementName=lbxImages}">
+      <Image x:Name="imgMain" HorizontalAlignment="Left" Height="220" Margin="25,83,0,0" VerticalAlignment="Top" Width="220"/>
+    </Grid>
+
+  </Grid>
+</Window>
