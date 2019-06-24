@@ -9,7 +9,7 @@
   <Grid>
     <Button x:Name="btnUpload" Content="Upload Image" HorizontalAlignment="Left" Margin="60,368,0,0" VerticalAlignment="Top" Width="100"/>
     <Button x:Name="btnDownload" Content="Download Image" HorizontalAlignment="Left" Margin="281,368,0,0" VerticalAlignment="Top" Width="100"/>
-    <ListBox x:Name="lbxImages" HorizontalAlignment="Left" Height="220" Margin="281,83,0,0" VerticalAlignment="Top" Width="100"/>
+    <ListBox x:Name="lbxImages" ItemsSource="{Binding Path=Images}" HorizontalAlignment="Left" Height="220" Margin="281,83,0,0" VerticalAlignment="Top" Width="100"/>
     <Label Content="Images:" HorizontalAlignment="Left" Margin="281,30,0,0" VerticalAlignment="Top" Width="100"/>
     <Label Content="Preview:" HorizontalAlignment="Left" Margin="25,38,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.06,0.562"/>
     <Grid DataContext="{Binding Path=SelectedItem, ElementName=lbxImages}">

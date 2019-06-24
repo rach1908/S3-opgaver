@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,12 @@ namespace ImgDB
     {
         public MainWindow()
         {
+            DataContext = this;
             InitializeComponent();
+            DBHandler dbh = new DBHandler();
+
+            ObservableCollection<Userimg> images = dbh.AllUserimgs();
+
         }
     }
 }
